@@ -7,6 +7,9 @@
              xmlns:helpers="clr-namespace:DemoApp.Helpers"
              xmlns:vm="clr-namespace:FoodOrder.ViewModels"
              x:Class="FoodOrder.Views.ProductsView">
+    <ContentPage.BindingContext>
+        <vm:ProductsViewModel/>
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <Grid Margin="20,0,0,0">
             <Grid.RowDefinitions>
@@ -32,11 +35,11 @@
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
 
-                <Label Text="Welcome " Grid.Row="0" Grid.Column="0" TextColor="Silver"/>
-                <Label Text="{Binding UserName}" Grid.Row="1" Grid.Column="0" FontSize="20" FontAttributes="Bold"/>
+                <Label Text="Welcome " Grid.Row="0" Grid.Column="0" TextColor="Black" FontSize="20"/>
+                <Label Text="{Binding UserName}" Grid.Row="1" Grid.Column="0" FontSize="25" TextColor="black" FontAttributes="bold"/>
                 <ImageButton Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Source="{FontImage FontFamily=FontAwesome, Glyph={x:Static helpers:IconFont.ViewList},
                     Size=40,Color=Purple}" Margin="0,0,10,0" HorizontalOptions="End"/>
-                <Label Text="{Binding UserCartItemsCount}" FontSize="Subtite" Grid.Row="0" Grid.Column="2" Grid.RowSpan="2" HorizontalTextAlignment="End" VerticalTextAlignment="Start"/>
+                <Label Text="{Binding UserCartItemsCount}" FontSize="Subtitle" Grid.Row="0" Grid.Column="2" Grid.RowSpan="2" HorizontalTextAlignment="End" VerticalTextAlignment="Start"/>
                 <ImageButton Grid.Row="0" Grid.Column="2" Grid.RowSpan="2" Source="{FontImage FontFamily=FontAwesome, Glyph={x:Static helpers:IconFont.Shopping},
                     Size=40,Color=Green}" Margin="0,0,10,0" HorizontalOptions="End"
                              Command="{Binding ViewCartCommand}"/>
@@ -93,7 +96,7 @@
                                 <Frame Grid.Row="1" Margin="20,-80,20,70" BackgroundColor="White" CornerRadius="15"
                                        HorizontalOptions="End">
                                     <Label Text="{Binding Price, StringFormat='{0:c}'}" FontSize="Medium"
-                                           FontAttributes="Bold" TextColor="Black" HeightRequest="10"/>
+                                           FontAttributes="Bold" TextColor="Black" HeightRequest="20"/>
                                 </Frame>
                                 <Label Grid.Row="1" Text="{Binding Name}" FontSize="22" FontAttributes="Bold"
                                        VerticalTextAlignment="Center"/>
