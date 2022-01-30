@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FoodOrder.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,9 @@ namespace FoodOrder
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            //MainPage = new LoginView();
+            MainPage = new NavigationPage(new SettingsPage());
         }
 
         protected override void OnStart()
