@@ -61,7 +61,7 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout Padding="0,0,15,0">
-                            <Frame HeightRequest="50" HasShadow="False" BackgroundColor="feeee8" CornerRadius="10">
+                            <Frame HeightRequest="50" HasShadow="False" BackgroundColor="#feeee8" CornerRadius="10">
                                 <Image Source="{Binding ImageUrl}" />
                             </Frame>
                             <Label Text="{Binding CategoryName}" HorizontalTextAlignment="Center" />
@@ -102,7 +102,7 @@
                                     <Label.FormattedText>
                                         <FormattedString>
                                             <Span Text="{Binding Rating}" FontAttributes="Bold"/>
-                                            <Span Text="{Binding Description}" TextColor="a4a7b6" />
+                                            <Span Text="{Binding Description}" TextColor="#a4a7b6" />
                                         </FormattedString>
                                     </Label.FormattedText>
                                 </Label>

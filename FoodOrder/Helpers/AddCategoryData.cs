@@ -40,21 +40,21 @@ namespace FoodOrder.Helpers
                 },
                 new Category()
                 {
-                    CategoryID = 1,
+                    CategoryID = 4,
                     CategoryName = "Veg Burgers",
                     CategoryPoster = "MainBurger",
                     ImageUrl = "Burger.png"
                 },
                 new Category()
                 {
-                    CategoryID = 2,
+                    CategoryID = 5,
                     CategoryName = "Veg Pizza",
                     CategoryPoster = "MainPizza",
                     ImageUrl = "Pizza.png"
                 },
                 new Category()
                 {
-                    CategoryID = 3,
+                    CategoryID = 6,
                     CategoryName = "Cakes",
                     CategoryPoster = "MainDessert",
                     ImageUrl = "Dessert.png"
