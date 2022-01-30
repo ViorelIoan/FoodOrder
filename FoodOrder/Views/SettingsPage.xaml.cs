@@ -25,5 +25,13 @@ namespace FoodOrder.Views
             var afd = new AddFoodItemData();
             await afd.AddFoodItemAsync();
         }
+        async void ButtonCart_Clicked(System.Object sender, System.EventArgs e)
+        {
+            var cct = new CreateCartTable();
+            if (cct.CreateTable())
+                DisplayAlert("Success", "Cart Table Created", "Ok");
+            else
+                DisplayAlert("Error", "Error while creating table", "Ok");
+        }
     }
 }
